@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<style>
+		.mySlides {display:none;}
+*{
+	margin:0;
+	padding: 0;
+	font-family: century gothic; 
+}
+ul{
+	float: right;
+	list-style-type: none;
+	margin-top: 25px;
+
+}
+ul li{
+	display: inline-block;
+
+}
+ul li a{
+	text-decoration: none;
+	color: #ff69b4;
+	padding: 5px 20px;
+	border: 1px solid 20px;
+	transition: 0.6s ease;
+}
+ul li a:hover{
+	background-color: #87CEEB;
+	color:#000;
+}
+ul li.active a{
+	background-color: #87CEEB;
+	color:#000;
+}
+.logo img{
+	float: left;
+	width: 90px;
+	height: 60px;
+	background:transparent;
+}	
+.main{
+	max-width: 1200px;
+
+}
+
+
+</style>
+<head>
+	<marquee>
+	<h1 style="color:red;"><body style="background-color:powderblue;">
+<center>-: CAR  RENTAL  MANAGEMENT  SYSTEM :-</center></h1>
+</marquee>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+	<header>
+
+		<div class="main">
+			<div class="logo">
+			<img src="logo1.png">
+
+
+			<ul>
+				<li class="active"><a href="front.html">Home</a></li>
+				<li><a href="about.html">AboutUs</a></li>
+				<li><a href="reg.html">Signup</a></li>
+				<li><a href="login.html">Signin</a></li>
+				
+			</ul>
+		</div>
+	</header>
+	<div class="w3-content w3-section" style="max-width:2100px">
+  <img class="mySlides" src="image1.jpg" style="width:100%">
+  <img class="mySlides" src="image2.jpg" style="width:100%">
+  <img class="mySlides" src="image3.jpg" style="width:100%">
+</div>
+<script type="text/javascript">
+	var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</body>
+</head>
+</html>
+
